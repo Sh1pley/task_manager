@@ -1,6 +1,16 @@
 <form action="/tasks" method="post">
-  <p>Enter a new task:</p>
-  <input type='text' name='task[title]'/><br/>
-  <textarea name='task[description]'></textarea><br/>
-  <input type='submit'/>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Enter a new task: 
+      <span class="glyphicon glyphicon-hand-left"></span></h3>
+    </div>
+    <div class="panel-body">
+      <textarea type='text' name='task[title]'>Task</textarea>
+        <div>  
+          <textarea class='form-control' name='task[description]' rows="3">Description</textarea>
+        <div>  
+      <input type='submit'/>
+      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+    </div>
+  </div>
 </form>
